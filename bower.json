@@ -1,0 +1,12 @@
+{
+  "name": "octopus",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "#1.2.29",
+    "angular-route": "#1.2.29",
+    "bootstrap":"#3.3.6",
+    "jquery":"2.2.4"
+  },
+  "devDependencies": {
+  }
+}

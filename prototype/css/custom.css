@@ -1,0 +1,86 @@
+body {
+    background-color: #fff;
+    font-family: "Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif;
+    min-width: 1000px;
+
+}
+.col-sm-3{
+    margin: 0px;
+    padding: 0px;
+}
+.sidebar {
+
+    top:55px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 20px;
+
+    bottom: 0;
+
+
+
+    display: block;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+.main {
+    top:55px;
+    left: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+    position: relative;
+}
+.navbar-brand {
+    color: #fcf8e3;
+    vertical-align: top;
+
+}
+
+.nav > li > a:hover,
+.nav > li > a.active,
+.nav > li > a:focus {
+    text-decoration: none;
+    background-color: #05A;
+    border-bottom: 2px solid white;
+    margin-bottom: 0px;
+}
+
+
+
+
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover,.navbar{
+
+    background-color: #05A;
+}
+
+
+.nav > li {
+    border: 0px;
+}
+.navbar a {
+    color: white!important;;
+}
+
+
+.navbar-logo {
+
+    margin-left: -210px;
+    margin-top: 10px;
+    width:30px;
+    height: 30px;
+    vertical-align: top;
+}
+
+.navbar-head {
+    padding-left: 10px;
+    margin-left: 10px;
+    border-left: 1px solid #ccc;
+    color: #fff;
+    max-width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

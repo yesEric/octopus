@@ -5,11 +5,14 @@
     <title>店铺</title>
     <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+
     <link rel='stylesheet' href='../css/custom.css' />
     <style>
 
 
     </style>
+
+
 </head>
 <body>
 
@@ -56,13 +59,13 @@
                 <div class="panel-heading">店铺管理</div>
                 <div class="panel-body">
                     <ul class="nav nav-pills nav-stacked">
-                        <li role="presentation" class="active"><a href="store/store_summary.html">店铺概况</a></li>
-                        <li role="presentation"><a href="store/micropage.html">页面</a></li>
-                        <li role="presentation"><a href="store/page_catalog.html">页面分类</a></li>
-                        <li role="presentation"><a href="store/member.html">会员主页</a></li>
-                        <li role="presentation"><a href="store/navgation.html">店铺导航</a></li>
-                        <li role="presentation"><a href="store/publish.html">公告广告</a></li>
-                        <li role="presentation"><a href="store/myfile.html">我的文件</a></li>
+                        <li role="presentation" class="active"><a href="store_summary.html">店铺概况</a></li>
+                        <li role="presentation"><a href="micropage.html">页面</a></li>
+                        <li role="presentation"><a href="page_catalog.html">页面分类</a></li>
+                        <li role="presentation"><a href="member.html">会员主页</a></li>
+                        <li role="presentation"><a href="navgation.html">店铺导航</a></li>
+                        <li role="presentation"><a href="publish.html">公告广告</a></li>
+                        <li role="presentation"><a href="myfile.html">我的文件</a></li>
                     </ul>
                 </div>
             </div>
@@ -88,11 +91,97 @@
                             <span class="label label-success">实体店铺</span>
                         </div>
                         <div class="col-sm-4">
-                            <button type="button" class="btn btn-success">发布商品</button>
-                            <button type="button" class="btn btn-success">新建页面</button>
-                            <button type="button" class="btn btn-default">访问店铺</button>
+                            <a href="#" class="btn btn-success">发布商品</a>
+                            <a href="#" class="btn btn-success">新建页面</a>
+                            <a href="#" class="btn btn-default">访问店铺</a>
                         </div>
                     </div>
+
+                    <!--概览-->
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <ul class="box" >
+
+                                <li>
+
+                                    <h3>
+                                        <a href="#">
+                                            <span >0</span>
+                                        </a>
+                                    </h3>
+                                    <h6 >昨日浏览PV</h6>
+                                </li>
+                                <li>
+
+                                    <h3>
+                                        <a href="#">
+                                            <span >0</span>
+                                        </a>
+                                    </h3>
+                                    <h6 >昨日浏览UV</h6>
+                                </li>
+
+                                <li>
+
+                                    <h3>
+                                        <a href="#">
+                                            <span >0</span>
+                                        </a>
+                                    </h3>
+                                    <h6>昨日到店PV</h6>
+                                </li>
+
+                                <li>
+
+                                    <h3>
+                                        <a href="#">
+                                            <span >0</span>
+                                        </a>
+                                    </h3>
+                                    <h6>昨日到店UV</h6>
+                                </li>
+
+                                <li>
+
+                                    <h3>
+                                        <a href="#">
+                                            <span >4</span>
+                                        </a>
+                                    </h3>
+                                    <h6>页面数量</h6>
+                                </li>
+                                <li>
+
+                                    <h3>
+                                        <a href="#">
+                                            <span >3</span>
+                                        </a>
+                                    </h3>
+                                    <h6>商品数量</h6>
+                                </li>
+
+                            </ul>
+
+
+                        </div>
+                        </div>
+
+                        <!-- 趋势 -->
+
+                        <!--趋势图-->
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="panel" >
+                                    <h3 class="panel-title"><i class="glyphicon glyphicon-exclamation-sign"></i> 流量趋势<span/></h3>
+                                </div>
+                                <div class="tubiao" style="min-width:800px;height:400px">
+
+                                </div>
+
+
+                            </div>
+                            </div>
                 </div>
 
             </div>
@@ -104,11 +193,40 @@
 
 
 <!-- jQuery -->
-<script src="../bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
-<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../bower_components/highcharts/highcharts.js"></script>
+<script src="../js/custom.js"></script>
 
-<script src="js/custom.js"></script>
+<script>
+$(function () {
+    $('#tubiao').highcharts({                   //图表展示容器，与div的id保持一致
+        chart: {
+            type: 'column'                         //指定图表的类型，默认是折线图（line）
+        },
+        title: {
+            text: 'My first Highcharts chart'      //指定图表标题
+        },
+        xAxis: {
+            categories: ['my', 'first', 'chart']   //指定x轴分组
+        },
+        yAxis: {
+            title: {
+                text: 'something'                  //指定y轴的标题
+            }
+        },
+        series: [{                                 //指定数据列
+            name: 'Jane',                          //数据列名
+            data: [1, 0, 4]                        //数据
+        }, {
+            name: 'John',
+            data: [5, 7, 3]
+        }]
+    });
+});
+</script>
+
 </body>
 </html>

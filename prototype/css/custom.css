@@ -1,5 +1,5 @@
 .btn{
-    border-radius: 2px !important;border-collapse: collapse !important;
+    border-radius: 2px !important;
     margin-bottom: 10px;
     margin-left: 10px;
     height: 26px;
@@ -7,7 +7,7 @@
     padding: 0 12px;
     font-size: 12px;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
 }
 
 body {

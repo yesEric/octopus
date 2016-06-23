@@ -27,6 +27,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bower_components',  express.static( path.join(__dirname, '/bower_components')));
 
+app.get('/*',function(req,res,next){
+  res.setHeader('Last-Modified',(new Date()).toUTCString());
+  next();
+} );
 app.use('/', routes);
 app.use('/users', users);
 

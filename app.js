@@ -9,6 +9,9 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
+var jumanji=require('jumanji');
+
+app.use(jumanji);
 
 // view engine setup
 swig=require('swig');

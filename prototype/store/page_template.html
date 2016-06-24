@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>店铺</title>
+    <title>页面模板</title>
     <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
 
@@ -60,8 +60,8 @@
                 <div class="panel-body">
                     <ul class="nav nav-pills nav-stacked">
                         <li role="presentation"><a href="store_summary.html">店铺概况</a></li>
-                        <li role="presentation"  class="active"><a href="column.html">导航栏目</a></li>
-                        <li role="presentation"><a href="page_template.html">页面模板</a></li>
+                        <li role="presentation" ><a href="column.html">导航栏目</a></li>
+                        <li role="presentation"  class="active"><a href="page_template.html">页面模板</a></li>
                         <li role="presentation"><a href="article.html">文章管理</a></li>
                         <li role="presentation"><a href="myfiles.html">我的文件</a></li>
                     </ul>
@@ -73,49 +73,46 @@
 
             <!--右侧主要内容-->
             <div class="panel panel-default " style=" border-radius: 0px !important;border-collapse: collapse !important;">
-                <div class="panel-heading">导航栏目</div>
+                <div class="panel-heading">页面模板</div>
                 <div class="container-fluid">
 
                     <div class="row">
                         <form action="">
-                        <div class="col-sm-8">
-                            <a href="newColumn.html" class="btn btn-success">新建导航栏目</a>
-                        </div>
+                            <div class="col-sm-8">
+                                <a href="new_page_template.html" class="btn btn-success">新建页面模板</a>
+                            </div>
 
-                        <div class="col-sm-4">
-                           <input type="text" class="form-control" placeholder="查询"/>
-                        </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control" placeholder="查询"/>
+                            </div>
                         </form>
                     </div>
 
                     <div class="row">
                         <table class="table table-bordered">
                             <thead class="table-header">
-                            <th>标题</th>
-                            <th>模板</th>
-                            <th>排序</th>
+                            <th>模板名称</th>
+
                             <th>操作</th>
                             </thead>
                             <tbody>
                             <tr>
-                            <td>首页</td>
-                            <td>首页</td>
-                            <td>1</td>
-                            <td>
-                                <a href="newColumn.html">编辑</a>
-                                <a href="#" data-toggle="modal" data-target="#deleteConfirm">
-                                    删除
-                                </a>
+                                <td>首页</td>
 
-                            </td>
+                                <td>
+                                    <a href="new_page_template.html">编辑</a>
+                                    <a href="#" data-toggle="modal" data-target="#deleteConfirm">
+                                        删除
+                                    </a>
+
+                                </td>
                             </tr>
 
                             <tr>
                                 <td>榜单</td>
-                                <td>榜单</td>
-                                <td>1</td>
+
                                 <td>
-                                    <a href="newColumn.html">编辑</a>
+                                    <a href="new_page_template.html">编辑</a>
                                     <a href="#" data-toggle="modal" data-target="#deleteConfirm">
                                         删除
                                     </a>

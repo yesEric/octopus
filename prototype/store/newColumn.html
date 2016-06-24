@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>店铺</title>
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+
+    <link rel='stylesheet' href='../css/custom.css' />
+    <style>
+
+
+    </style>
+
+
+</head>
+<body>
+
+<!-- Fixed navbar -->
+<nav class="navbar  navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <img src="../imgs/dd128.png" class="navbar-logo">
+            <a class="navbar-brand" href="#">
+
+                <span class="navbar-head">这是一很长的标题</span></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="../index.html" >概况</a></li>
+                <li><a href="store_summary.html"  class="active"> 店铺</a></li>
+                <li><a href="../product.html" > 商品</a></li>
+                <li><a href="../order.html"  >订单</a></li>
+                <li><a href="../data.html" >数据</a></li>
+                <li><a href="../assets.html" >资产</a></li>
+                <li><a href="../marketing.html">营销</a></li>
+                <li><a href="../setting.html" >设置</a></li>
+                <li><a href="#contact"></a></li>
+                <li><a href="#contact"></a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">账户名 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">账户设置</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">退出</a></li>
+
+                    </ul>
+                </li>
+            </ul>
+
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<div class="container content">
+    <!--左侧菜单-->
+    <div class="row">
+        <div class="col-sm-2 sidebar" >
+            <div class="panel panel-default">
+                <div class="panel-heading">店铺管理</div>
+                <div class="panel-body">
+                    <ul class="nav nav-pills nav-stacked">
+                        <li role="presentation"><a href="store_summary.html">店铺概况</a></li>
+                        <li role="presentation"  class="active"><a href="column.html">导航栏目</a></li>
+                        <li role="presentation"><a href="catalog.html">主题分类</a></li>
+                        <li role="presentation"><a href="template.html">店铺模板</a></li>
+                        <li role="presentation"><a href="myfiles.html">我的文件</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-8  main">
+
+            <!--右侧主要内容-->
+            <div class="panel panel-default " style=" border-radius: 0px !important;border-collapse: collapse !important;">
+                <ol class="breadcrumb">
+                    <li><a href="column.html">导航栏目</a></li>
+                    <li>新建</li>
+
+                </ol>
+                <div class="container-fluid">
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <label for="template" class="col-sm-2 control-label">模板</label>
+                            <div class="col-sm-2">
+                                <select name="template" id="template" class="form-control input-sm">
+                                    <option>首页</option>
+                                    <option>榜单</option>
+                                    <option>分类</option>
+                                    <option>推荐</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="title" class="col-sm-2 control-label">标题</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" id="title" placeholder="栏目标题">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="memo" class="col-sm-2 control-label">备注</label>
+                            <div class="col-sm-6">
+                                <textarea  class="form-control" id="memo"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                                <label for="sort" class="col-sm-2 control-label">排序</label>
+                                <div class="col-sm-2">
+                                    <input type="text" class="form-control" id="sort" placeholder="0">
+                                </div>
+                                <div class="col-sm-offset-5 ">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox"> 设为首页
+                                        </label>
+                                    </div>
+                                </div>
+
+
+
+                        </div>
+
+
+                        <div class="form-group">
+                            <div class="col-sm-offset-4 col-sm-2">
+                                <button type="submit" class="btn btn-success">保存</button>
+
+                            </div>
+                            <div class="col-sm-1">
+                                <a  href="column.html" class="btn btn-default">返回</a>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="col-sm-2 main" >
+            <div class="panel panel-default " >
+                <div class="panel-heading">
+                    <i class="glyphicon glyphicon-question-sign"></i> 帮助
+                </div>
+                <div class="panel-body">
+                    内容
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-- jQuery -->
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script src="../js/custom.js"></script>
+
+
+</body>
+</html>

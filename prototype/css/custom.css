@@ -1,19 +1,33 @@
 .btn{
     border-radius: 2px !important;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    height: 26px;
-    line-height: 26px;
-    padding: 0 12px;
-    font-size: 12px;
-    text-align: center;
-    border: 0px solid #ddd;
-}
+    min-width: 100px;
 
+}
+span{
+    margin: 10px;
+}
+/*.control-label .form-control{*/
+    /*border-radius: 2px !important;*/
+    /*font-size: 12px;*/
+    /*height: 26px;*/
+/*}*/
+.table-header{
+    background-color: gainsboro;
+
+
+}
+.table{
+    font-size: 12px;
+}
+.row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 body {
     background-color: #fff;
     font-family: "Open Sans",Arial,"Hiragino Sans GB","Microsoft YaHei","微软雅黑",STHeiti,"WenQuanYi Micro Hei",SimSun,sans-serif;
     min-width: 1000px;
+
 
 }
 .col-sm-3{
@@ -134,7 +148,7 @@ a:active{
 .nav > li > a.active,
 .nav > li > a:focus {
     text-decoration: none;
-    background-color: #05A;
+    /*background-color: #05A;*/
     border-bottom: 2px solid white;
     margin-bottom: 0px;
 }
